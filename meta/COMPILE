@@ -1,0 +1,10 @@
+
+apt install autogen
+
+./autogen.sh
+./configure --prefix=/opt/libsndfile \
+    --sysconfdir=/opt/libsndfile/conf \
+    CPPFLAGS="-I/opt/opus/include" \
+    LDFLAGS="-L/opt/opus/lib"
+
+
